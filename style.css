@@ -1,0 +1,167 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 500px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0px;
+}
+
+.best_sell {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  z-index: auto;
+  font-size: 1rem;
+  color: #404ab0;
+  font-style: auto;
+  font-weight: bold;
+}
+
+.card {
+  width: 22.5%;
+  height: 70%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 0 solid transparent;
+  border-radius: 0.3rem 0.3rem 0.3rem 0.3rem;
+  box-shadow: 1px 1px 5px 20px #eeeeee, -1px -1px 5px 20px #eeeeee;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: auto;
+}
+.card-best_sell {
+  width: 150px;
+  height: 25px;
+  background-color: #e51318;
+  border: 0 solid transparent;
+  border-radius: 25px 25px 25px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  position: absolute;
+  top: -2.5%;
+  right: auto;
+  bottom: auto;
+  left: -6%;
+  z-index: auto;
+  font-size: 0.75rem;
+  color: white;
+  font-style: auto;
+  font-weight: bold;
+}
+.card-img_maison {
+  width: 140px;
+  height: 140px;
+  background-color: transparent;
+  background-image: url(assets/maison.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+.card-img_tracteur {
+  width: 140px;
+  height: 140px;
+  background-color: transparent;
+  background-image: url(assets/tracteur.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+}
+.card-img_toboggan {
+  width: 140px;
+  height: 140px;
+  background-color: transparent;
+  background-image: url(assets/toboggan.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+}
+.card-img_pikachu {
+  width: 140px;
+  height: 140px;
+  background-color: transparent;
+  background-image: url(assets/pikachu.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+}
+.card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #060000;
+  font-style: auto;
+  font-weight: bold;
+}
+.card-brand_name {
+  font-size: 0.5rem;
+  color: #a1a2a2;
+  font-style: auto;
+  font-weight: normal;
+}
+.card-price {
+  font-size: 1.75rem;
+  color: #404ab0;
+  font-style: auto;
+  font-weight: bolder;
+}
+.card-product_sheet {
+  width: 150px;
+  height: 30px;
+  background-color: #404ab0;
+  border: 0 solid transparent;
+  border-radius: 25px 25px 25px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  font-size: 0.7rem;
+  color: white;
+  font-style: auto;
+  font-weight: bold;
+}
+.card-available {
+  font-size: 0.6rem;
+  color: #a1a2a2;
+  font-style: auto;
+  font-weight: normal;
+  margin-top: 10px;
+}
+.card-available span {
+  font-size: 0.6rem;
+  color: #a7cfba;
+  font-style: auto;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=style.css.map */

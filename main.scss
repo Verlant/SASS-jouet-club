@@ -1,0 +1,85 @@
+@use "var";
+@use "mixin";
+
+@import url("https://fonts.cdnfonts.com/css/poppins");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+main {
+  @include mixin.figure(100vw, var.$height * 5, transparent);
+  @include mixin.flex(row, space-evenly, center, 0px);
+}
+.best_sell {
+  @include mixin.figure(auto, auto, transparent);
+  @include mixin.position(absolute, 0, auto, auto, 0, auto);
+  @include mixin.font(var.$font-size, var.$secondary, auto, bold);
+}
+.card {
+  @include mixin.figure(22.5%, 70%, white);
+  @include mixin.flex(column, center, center, 10px);
+  @include mixin.border(0, solid, transparent, 0.3rem, 0.3rem, 0.3rem, 0.3rem);
+  @include mixin.shadow-box(1px, 1px, 5px, 20px, var.$shadow-color);
+  @include mixin.position(relative, auto, auto, auto, auto, auto);
+  &-best_sell {
+    @include mixin.figure(var.$width * 1.5, var.$height * 0.25, var.$primary);
+    @include mixin.border(0, solid, transparent, 25px, 25px, 25px, 25px);
+    @include mixin.flex(row, center, center, 0px);
+    @include mixin.position(absolute, -2.5%, auto, auto, -6%, auto);
+    @include mixin.font(var.$font-size * 0.75, white, auto, bold);
+  }
+  &-img_maison {
+    @include mixin.figure(var.$width * 1.4, var.$height * 1.4, transparent);
+    background-image: url(assets/maison.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+  }
+  &-img_tracteur {
+    @include mixin.figure(var.$width * 1.4, var.$height * 1.4, transparent);
+    background-image: url(assets/tracteur.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+  }
+  &-img_toboggan {
+    @include mixin.figure(var.$width * 1.4, var.$height * 1.4, transparent);
+    background-image: url(assets/toboggan.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+  }
+  &-img_pikachu {
+    @include mixin.figure(var.$width * 1.4, var.$height * 1.4, transparent);
+    background-image: url(assets/pikachu.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 25px;
+  }
+  &-title {
+    @include mixin.flex(column, center, center, 0px);
+    text-align: center;
+    @include mixin.font(var.$font-size * 0.6, var.$black, auto, bold);
+  }
+  &-brand_name {
+    @include mixin.font(var.$font-size * 0.5, var.$gray, auto, normal);
+  }
+  &-price {
+    @include mixin.font(var.$font-size * 1.75, var.$secondary, auto, bolder);
+  }
+  &-product_sheet {
+    @include mixin.figure(var.$width * 1.5, var.$height * 0.3, var.$secondary);
+    @include mixin.border(0, solid, transparent, 25px, 25px, 25px, 25px);
+    @include mixin.flex(row, center, center, 0px);
+    @include mixin.font(var.$font-size * 0.7, white, auto, bold);
+  }
+  &-available {
+    @include mixin.font(var.$font-size * 0.6, var.$gray, auto, normal);
+    margin-top: 10px;
+    span {
+      @include mixin.font(var.$font-size * 0.6, var.$tertiary, auto, normal);
+    }
+  }
+}
